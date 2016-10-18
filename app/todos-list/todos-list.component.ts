@@ -33,8 +33,4 @@ export class TodosListComponent implements OnInit {
          console.log(item);
          this.todos.splice(this.todos.indexOf(item), 1);
      }
-
-     dupa() {
-         
-     }
 }
