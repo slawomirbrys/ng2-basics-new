@@ -1,12 +1,12 @@
 <div class="panel">
   <h3>TODOs List</h3>
   <ol class="todo-list">
-    <li>
+    <li *ngFor="let item of todos" >
       <div class="todo-item">
         <strong class="title">
-          TITLE TODO
+          {{item.title}}
         </strong>
-        <div class="desc">TODO</div>
+        <div class="desc">{{item.description}}</div>
         <button>Edit</button>
         <button>Remove</button>
       </div>
