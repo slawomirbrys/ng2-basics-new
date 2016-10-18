@@ -9,6 +9,7 @@ import {InputsOutPutsExamplesModule} from "./inputs-outputs-examples/inputs-outp
 import {
   ViewInterpolationExamplesModule
 } from "./view-interpolation-examples/view-interpolation-examples.module";
+import {TodosListModule} from "./todos-list/todos-list.module";
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import {
     FormsModule,
     ViewInterpolationExamplesModule,
     BindingExamplesModule,
-    InputsOutPutsExamplesModule
+    InputsOutPutsExamplesModule,
+    TodosListModule
     //TODO
   ],
   declarations: [

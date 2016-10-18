@@ -13,5 +13,7 @@ import {PersonalDataComponent} from "./personal-data.component";
     PersonalDataComponent
   ]
 })
-export class ViewInterpolationExamplesModule {
+class ViewInterpolationExamplesModule {
 }
+
+export {ViewInterpolationExamplesModule }
