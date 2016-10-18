@@ -1,0 +1,18 @@
+<h3>Property Binding Examples</h3>
+
+<div *ngIf="batman">
+  <div>
+    <input [value]="batman.name"/>
+  </div>
+  <hr/>
+
+  <div>
+    <button [disabled]="isBtnDisabled">Click me!</button>
+  </div>
+  <hr/>
+
+  <div>
+    <img [src]="image.url" style="width: 800px;"/>
+  </div>
+  <hr/>
+</div>
