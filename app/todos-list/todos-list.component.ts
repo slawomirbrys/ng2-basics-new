@@ -28,4 +28,13 @@ export class TodosListComponent implements OnInit {
 
          this.todos.push(newItem);
      }
+
+     remove(item:Todo){
+         console.log(item);
+         this.todos.splice(this.todos.indexOf(item), 1);
+     }
+
+     dupa() {
+         
+     }
 }
