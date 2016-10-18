@@ -14,11 +14,11 @@
   </ol>
   <div>
     <div>
-      Title: TODO
+      Title: <input [(ngModel)]="newTitle">
     </div>
     <div>
-      Description: TODO
+      Description: <input [(ngModel)]="newDescription">
     </div>
-    <button>Add</button>
+    <button (click)="add()">Add</button>
   </div>
 </div>
