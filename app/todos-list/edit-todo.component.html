@@ -1,10 +1,10 @@
 <div class="todo-edit">
   <div>
-    Title: TODO
+    Title: <input [(ngModel)]="editTitle" />
   </div>
   <div>
-    Description: TODO
+    Description: <input [(ngModel)]="editDescription" />
   </div>
-  <button>Update</button>
-  <button>Cancel</button>
+  <button (click)="update()">Update</button>
+  <button (click)="cancel()">Cancel</button>
 </div>

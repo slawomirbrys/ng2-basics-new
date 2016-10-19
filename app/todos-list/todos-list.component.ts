@@ -33,4 +33,25 @@ export class TodosListComponent implements OnInit {
          console.log(item);
          this.todos.splice(this.todos.indexOf(item), 1);
      }
+
+     edit(item:Todo) {
+        item.isFinished = true;
+     }
+
+     update(item:Todo){
+         this.todos.forEach((value:Todo, index:number) => {
+            console.log(`looking for id ${item.id} while current item id is ${value.id}`);
+            if ( item.id == value.id )
+            {
+                console.log(`edited item with id ${item.id}, title: ${value.title}, desc: ${value.description}`);
+                value.title = item.title;
+                value.description = item.description;
+                value.isFinished = false;
+            }
+         });
+     }
+
+     cancel(item:Todo){
+        item.isFinished = false;
+     }
 }

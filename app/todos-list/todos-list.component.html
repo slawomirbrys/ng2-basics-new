@@ -7,8 +7,13 @@
           {{item.title}}
         </strong>
         <div class="desc">{{item.description}}</div>
-        <button>Edit</button>
+        <button (click)="edit(item)">Edit</button>
         <button (click)="remove(item)">Remove</button>
+        <edit-todo *ngIf="item.isFinished"
+                   [item]="item"
+                   (onUpdate)="update($event)"
+                   (onCancel)="cancel(item)">
+        </edit-todo>
       </div>
     </li>
   </ol>
