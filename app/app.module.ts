@@ -10,6 +10,7 @@ import {
   ViewInterpolationExamplesModule
 } from "./view-interpolation-examples/view-interpolation-examples.module";
 import {TodosListModule} from "./todos-list/todos-list.module";
+import {TodosService} from "./todos-list/todos.service";
 
 @NgModule({
   imports: [
@@ -24,7 +25,9 @@ import {TodosListModule} from "./todos-list/todos-list.module";
   declarations: [
     AppComponent
   ],
-  providers: [],
+  providers: [
+    TodosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
